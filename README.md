@@ -188,7 +188,7 @@ evaluator = RegressionEvaluator(
 ``` python
 
 # Now the model is evaluating with the help of testing data and generating predictions
-# then these predictions are then evaluated and caluclate RMSE value in order to verify model performance
+# these predictions are then evaluated and used to calculate the RMSE value for verifying model performance
  
 lr_preds = lr_model.transform(test)
     lr_rmse = evaluator.evaluate(lr_preds)
